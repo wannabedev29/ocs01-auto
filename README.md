@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
-Automation tool for interacting with **OCS01 smart contract** on OCTRA network.  
+Automation tool for interacting with **OCS01 smart contract** on the OCTRA network.  
 Runs all available contract methods in a single execution and saves the results.
 
 ---
@@ -72,6 +72,6 @@ Result: Greetings, oct67eeu...
 ▶ contract info...
 Result: OCS01: math & test token distribution contract (v.0.0.12)
 ...
-🎯 Done! Hasil disimpan di ocs01_report.txt
+🎯 Done! U GETTIN COOCKKEDD !!!
 📜 License
 MIT License
