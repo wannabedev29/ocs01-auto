@@ -1,0 +1,7 @@
+# Ignore Rust build artifacts
+/target
+
+# Ignore sensitive files
+wallet.json
+ocs01_report.txt
+
