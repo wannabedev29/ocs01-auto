@@ -24,11 +24,12 @@ A blazing fast ⚡ Rust automation tool for interacting with **OCS01 smart contr
 
 ```text
 ocs01-auto/
-├── 📄 Cargo.toml           # Project config
-├── 📄 exec_interface.json  # ABI definitions
-├── 📂 src/                 # Source code
-│   └── 📄 main.rs          # Core logic
-└── 📄 wallet.json          # Wallet config
+├── 📄 Cargo.toml # Project config
+├── 📄 exec_interface.json # ABI definitions
+├── 📄 wallet.example.json # Wallet template
+├── 📂 src/ # Source code
+│ └── 📄 main.rs # Core logic
+└── 📄 README.md # Documentation
 ```
 ---
 
