@@ -1,77 +1,86 @@
-# 🚀 OCS01 Auto Runner
+# 🌟 OCS01 Auto Runner 
 
-![Rust](https://img.shields.io/badge/Rust-2024-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+[![Rust Version](https://img.shields.io/badge/Rust-1.70%2B-orange?logo=rust)](https://www.rust-lang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)](https://github.com/wannabedev29/ocs01-auto/commits/main)
 
-Automation tool for interacting with **OCS01 smart contract** on the OCTRA network.  
-Runs all available contract methods in a single execution and saves the results.
-
----
-
-## ✨ Features
-- ✅ Auto-load wallet from `wallet.json`
-- ✅ Executes **all contract methods** in one go
-- ✅ Saves report to `ocs01_report.txt`
-- ✅ Randomized params for math-based methods
-- ✅ Built with Rust for speed and safety
+A blazing fast ⚡ Rust automation tool for interacting with **OCS01 smart contracts** on the Octra blockchain network.
 
 ---
 
-## 📂 Project Structure
-.
-├── Cargo.toml
-├── exec_interface.json
-├── src/
-│ └── main.rs
-└── wallet.json
+## 🎯 Features
 
-yaml
-Copy
-Edit
+| Feature | Description |
+|---------|-------------|
+| 🔐 **Secure Wallet** | Auto-load from encrypted `wallet.json` |
+| 🤖 **Smart Execution** | Runs all contract methods sequentially |
+| 📈 **Auto Reporting** | Generates detailed `ocs01_report.txt` |
+| 🎲 **Randomized Inputs** | Dynamic params for math operations |
+| 🛡️ **Rust Safety** | Memory-safe and thread-safe |
 
 ---
 
-## ⚙️ Setup & Run
+## 📁 Project Structure
 
-### 1. Install Rust
-```bash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-source $HOME/.cargo/env
-2. Clone Repo
-bash
-Copy
-Edit
-git clone https://github.com/wannabedev29/ocs01-auto.git
-cd ocs01-auto
-3. Configure Wallet
+```text
+ocs01-auto/
+├── 📄 Cargo.toml           # Project config
+├── 📄 exec_interface.json  # ABI definitions
+├── 📂 src/                 # Source code
+│   └── 📄 main.rs          # Core logic
+└── 📄 wallet.json          # Wallet config
+```
+---
+
+---
+
+## 🛠️ Installation & Usage
+
+### Prerequisites
+- Rust 1.70+ ([install guide](https://www.rust-lang.org/tools/install))
+
+### ✅ 3. Configure Wallet
 Edit wallet.json:
-
-json
-Copy
-Edit
+```text
 {
   "priv": "<your-private-key>",
   "addr": "<your-wallet-address>",
   "rpc": "https://octra.network"
 }
-4. Build & Run
-bash
-Copy
-Edit
+```
+---
+
+### Quick Start
+```bash
+# Clone repository
+git clone https://github.com/wannabedev29/ocs01-auto.git
+cd ocs01-auto
+
+# Configure wallet (edit before use!)
+cp wallet.example.json wallet.json
+nano wallet.json
+
+# Build and run
 cargo build --release
 ./target/release/ocs01-auto
-📝 Example Output
-yaml
-Copy
-Edit
+```
+---
+### 📄 Sample Output
+```text
+
 ✅ Wallet loaded: oct67eeuEafdHwp3bXn58YjZkTF7HTEN...
 💰 Balance: 148.846992 OCT
 ▶ greeting...
 Result: Greetings, oct67eeu...
 ▶ contract info...
 Result: OCS01: math & test token distribution contract (v.0.0.12)
+▶ claim token...
+TX Hash: e1695e38cd531b79...
+▶ check token balance...
+Result: 1000000000000
 ...
-🎯 Done! U GETTIN COOCKKEDD !!!
-📜 License
-MIT License
+🎯 Done! Report saved in ocs01_report.txt
+```
+---
+## 📜 License
+MIT © 2024 wannabedev29
