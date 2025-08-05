@@ -1,0 +1,6 @@
+{
+  "priv": "your-private-key-here",
+  "addr": "your-wallet-address-here",
+  "rpc": "https://octra.network"
+}
+
